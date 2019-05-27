@@ -12,6 +12,9 @@ var estudiantes =  [
                 {"codigo":"010", "nombre":"Carlos", "nota":7.5}];
 
 document.getElementById('lista').addEventListener("click",  registros);
+document.getElementById('promedio').addEventListener("click", promedios);
+document.getElementById('Mayor nota').addEventListener("click", calcularNotaMayor);
+document.getElementById('Menor nota').addEventListener("click", calcularNotaMenor);
 
 //funcion que captura los datos del registro
 function registros(json) {
