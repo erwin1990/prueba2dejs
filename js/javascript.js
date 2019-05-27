@@ -11,6 +11,8 @@ var estudiantes =  [
                 {"codigo":"009", "nombre":"Marta", "nota":10},
                 {"codigo":"010", "nombre":"Carlos", "nota":7.5}];
 
+document.getElementById('lista').addEventListener("click",  registros);
+
 //funcion que captura los datos del registro
 function registros(json) {
   var codigo = parseInt(document.getElementById('codigo').value); //capturo el valor ingresado en codigo y lo coloco en la variable codigo
