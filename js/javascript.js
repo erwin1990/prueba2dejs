@@ -27,12 +27,12 @@ function registros(json) {
       leerJSON(estudiantes);
 }
 
-//funcion que lee json y devuelve sus propiedades y valores
+//funcion que lee json y de vulve los propiedades y valores
 function leerJSON(json) {
-  var out="estudiantes<br>";
+  var out = "";
   var i;
   for (i = 0; i < json.length; i++) {
-    out+="codigo:"+json[i].codigo+"- "+" nombre: "+json[i].nombre+"-"+" Nota: "+json[i].nota+"<br>";
+    out+="<tr><td>" + json[i].codigo + "</td><td>" + json[i].nombre + "</td><td>" + json[i].nota +"</td></tr>";
   }
   document.getElementById('tabla').innerHTML = out;
 }
