@@ -10,25 +10,48 @@
   <body>
 
     <div id="cabecera">
-      <h1 id="texto">Base de datos de Estudiantes</h1>
+    <h1 id="titulo">Registro de Estudiantes</h1>
     </div>
 
-    <div id="div">
-
+    <div id="div" aling="center">
+      <form id="registro">
+        <tr>
+	        <td><label>Codigo:</label></td><br>
+	         <td><input type="text" id="codigo"></td>
+	      </tr>
+        <br>
+				<tr>
+	        <td><label>Nombre:</label></td><br>
+	         <td><input type="text" id="nombre"></td>
+	      </tr>
+        <br>
+	      <tr>
+	        <td><label>Nota:</label></td><br>
+	         <td><input type="text" id="nota"></td>
+	      </tr>
+      </form>
       <br>
-      <button type="button" id="lista" name="Estudiantes" onclick="leerJSON(estudiantes)">Estudiantes</button>
-      <button type="button" id="promedio" name="Promedio" onclick="Promedio(estudiantes)">Promedios</button>
-      <button type="button" id="Mayor nota" name="Estudiantes" onclick="notaMayor(estudiantes)">Mayor nota</button>
-      <button type="button" id="Menor nota" name="Estudiantes" onclick="notaMenor(estudiantes)">Menor nota</button>
       <br>
-
-
+      <button type="button" id="lista" name="Estudiantes">Registrar estudiantes</button>
+      <button type="button" id="promedio" name="Promedio">Mostrar promedios</button>
+      <button type="button" id="Mayor nota" name="Estudiantes">Mostrar Mayor nota</button>
+      <button type="button" id="Menor nota" name="Estudiantes">Mostrar Menor nota</button>
+      <br>
     </div>
 
-    <h1>Datos</h1>
-      <br>
-      <p id="tabla"></p>
+    <div >
+      <h1>Listado de Estudiantes:</h1>
+      <table id="tabla" border="2">
+        <tr>
+          <td>Codigo</td>
+          <td>estudiante</td>
+          <td>Nota</td>
+        </tr>
+      </table>
+      <table id="tabla" border="2">
 
+      </table>
+    </div>
 
 </body>
 <script type="text/javascript" src="js/javascript.js"></script>
