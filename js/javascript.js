@@ -11,6 +11,17 @@ var estudiantes =  [
                 {"codigo":"009", "nombre":"Marta", "nota":10},
                 {"codigo":"010", "nombre":"Carlos", "nota":7.5}];
 
+//funcion que captura los datos del registro
+function registros(json) {
+  var codigo = parseInt(document.getElementById('codigo').value); //capturo el valor ingresado en codigo y lo coloco en la variable codigo
+  var nombre = document.getElementById('nombre').value;//capturo el valor ingresado en nombre y lo coloco en la variable nombre
+  var nota = parseInt(document.getElementById('nota').value);//capturo el valor ingresado en nota y lo coloco en la variable nota
+
+  var estudiante = {"codigo":codigo, "nombre":nombre, "nota":nota};
+      estudiantes.push(estudiante);
+      leerJSON(estudiantes);
+}
+
 //funcion que lee json y devuelve sus propiedades y valores
 function leerJSON(json) {
   var out="estudiantes<br>";
